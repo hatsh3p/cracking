@@ -1,13 +1,12 @@
 package ArraysAndStrings;
 
+/**
+ * Problem: Implement an algorithm to determine if a string has all unique characters.
+ *      Input:       Output:
+ *      "cat"        "true"
+ *      "bib"        "false"
+ */
 public class Q1_IsUnique {
-    /**
-     * Problem: Implement an algorithm to determine if a string has all unique characters.
-     *      Input:       Output:
-     *      "cat"        "true"
-     *      "bib"        "false"
-     */
-
     /**
      * Solution 1
      *

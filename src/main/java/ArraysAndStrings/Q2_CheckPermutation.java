@@ -14,6 +14,15 @@ public class Q2_CheckPermutation {
      * When check for a permutation, we are checking for the same character count in each string.
      * Easy thing to do is check if the strings are the same length.
      * Next, we want to loop through each string and count the number of times a letter shows up.
+     *
+     *      Time Complexity:     O(N)
+     *      Space Complexity:    O(N)
+     *
+     * Could replace HashMap with a single int[] array of size 26 OR the entire ASCII character set.
+     * Then add 1 for every codepoint found in the first string and subtract 1 for every codepoint
+     * found in the second string.
+     * Loop through the array and as soon as a non-zero is found return false.
+     * Else return true.
      */
     public static boolean isPermutation (String str1, String str2) {
         if (str1.length() != str2.length()) {
@@ -41,4 +50,8 @@ public class Q2_CheckPermutation {
         }
         return map;
     }
+
+    /**
+     *
+     */
 }
