@@ -12,8 +12,9 @@ public class Q3_URLify {
     /**
      * Solution 1
      *
-     *      Time Complexity:     O(?)
-     *      Space Complexity:    O(?)
+     *      Time Complexity:     O(N)
+     *      Space Complexity:    O(?) (As written is O(N) but the problem wants
+     *      you to pass in a charArray and return the same charArray -> O(1).
      */
     public static String replaceSpaces(String str, int strLength) {
         char[] arr = str.toCharArray();
