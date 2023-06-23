@@ -50,8 +50,4 @@ public class Q2_CheckPermutation {
         }
         return map;
     }
-
-    /**
-     *
-     */
 }
