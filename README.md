@@ -16,6 +16,8 @@ Each question may contain multiple solutions and tests.
 - [ ] 1.8 Zero Matrix
 - [ ] 1.9 String Rotation
 
+GOAL: Complete by 6/25
+
 # Ch 2 Linked Lists (8)
 - [ ] 2.1 Remove Dups
 - [ ] 2.2 Return Kth to Last
@@ -26,6 +28,8 @@ Each question may contain multiple solutions and tests.
 - [ ] 2.7 Intersection
 - [ ] 2.8 Loop Detection
 
+GOAL: Complete by 6/28
+
 # Ch 3 Stacks & Queues (6)
 - [ ] 3.1 Three in One
 - [ ] 3.2 Stack Min
@@ -33,7 +37,9 @@ Each question may contain multiple solutions and tests.
 - [ ] 3.4 Queue via Stacks
 - [ ] 3.5 Sort Stack
 - [ ] 3.6 Animal Shelter 
-- 
+
+GOAL: Complete by 6/30
+
 # Ch 4 Trees & Graphs (12)
 - [ ] 4.1 Route Between Nodes
 - [ ] 4.2 Minimal Tree
@@ -48,6 +54,8 @@ Each question may contain multiple solutions and tests.
 - [ ] 4.11 Random Node
 - [ ] 4.12 Paths with Sum
 
+GOAL: Complete by 7/6
+
 # Ch 5 Bit Manipulation (8)
 - [ ] 5.1 Insertion
 - [ ] 5.2 Binary to String
@@ -57,6 +65,8 @@ Each question may contain multiple solutions and tests.
 - [ ] 5.6 Conversion
 - [ ] 5.7 Pairwise Swap
 - [ ] 5.8 Draw Line
+
+GOAL: Complete by 7/12
 
 # Ch 6 Math & Logic Puzzles (10)
 - [ ] 6.1 The Heavy Pill
@@ -69,6 +79,8 @@ Each question may contain multiple solutions and tests.
 - [ ] 6.8 The Egg Drop Problem
 - [ ] 6.9 100 Lockers
 - [ ] 6.10 Poison
+
+GOAL: Complete by 7/17.
 
 # Progress
 4/53 Questions
