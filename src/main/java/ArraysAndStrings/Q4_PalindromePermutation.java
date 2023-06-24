@@ -58,4 +58,40 @@ public class Q4_PalindromePermutation {
             return -1;
         }
     }
+
+    /**
+     * Solution 2: Effectively the same thing as Solution 1 algorithmically.
+     * Based on CTCI solution.
+     * Just organized into 4 different functions.
+     *
+     * (1) boolean isPermutationOfPalindrome2(String phrase)
+     * (2) boolean checkMaxOneOdd(int[] table)
+     * (3) int getCharpoint(char c) -- REUSED FROM ABOVE
+     * (4) int[] buildCharFrequencyTable(String phrase)
+     */
+    static boolean isPermutationOfPalindrome2(String phrase) {
+        int[] table = buildCharFrequencyTable(phrase);
+        return checkMaxOneOdd(table);
+    }
+
+    static boolean checkMaxOneOdd(int[] table) {
+        int oddCount = 0;
+        for (int n: table) {
+            if (n % 2 != 0) {
+                ++oddCount;
+            }
+        }
+        return oddCount == 1;
+    }
+
+    static int[] buildCharFrequencyTable(String phrase) {
+        int[] table = new int[26];
+        for (int i = 0; i < phrase.length(); i++) {
+            int index = getCharpoint(phrase.charAt(i));
+            if (index != -1) {
+                table[index] += 1;
+            }
+        }
+        return table;
+    }
 }
