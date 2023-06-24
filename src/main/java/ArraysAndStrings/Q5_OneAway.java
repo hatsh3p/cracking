@@ -68,6 +68,10 @@ public class Q5_OneAway {
      * In this solution, there are two subfunctions:
      *      (1) boolean oneEditReplace(String s1, String s2)
      *      (2) boolean oneEditInsert(String s1, String s2)
+     *
+     *      Time Complexity:     O(N) where N is the length of the shorter string.
+     *      Space Complexity:    O(1)
+     *
      */
 
     public static boolean isOneAway(String s1, String s2) {
@@ -113,9 +117,4 @@ public class Q5_OneAway {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println(oneEditAway("pale", "fale"));
-    }
-
 }
