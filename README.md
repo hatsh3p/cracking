@@ -38,7 +38,7 @@ GOAL: Complete by 6/28
 - [ ] 3.5 Sort Stack
 - [ ] 3.6 Animal Shelter 
 
-GOAL: Complete by 6/30
+GOAL: Complete by 7/2
 
 # Ch 4 Trees & Graphs (12)
 - [ ] 4.1 Route Between Nodes
