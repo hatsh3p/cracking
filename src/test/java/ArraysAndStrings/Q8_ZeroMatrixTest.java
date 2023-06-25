@@ -33,4 +33,18 @@ class Q8_ZeroMatrixTest {
         zeroOutCol(initialArray, 1);
         assertTrue(Arrays.deepEquals(expectedArray, initialArray));
     }
+
+    @Test
+    void multipleZeroMatrixTestOneZero() {
+        int[][] initialArray = {{1, 2, 3, 4}, {4, 0, 6, 7}, {8, 9, 10, 11}};
+        int[][] expectedArray = {{1, 0, 3, 4}, {0, 0, 0, 0}, {8, 0, 10, 11}};
+        assertTrue(Arrays.deepEquals(expectedArray, multipleZeroMatrix(initialArray)));
+    }
+
+    @Test
+    void multipleZeroMatrixTestMultipleZero() {
+        int[][] initialArray = {{1, 2, 3, 4}, {4, 0, 6, 7}, {8, 9, 10, 11}, {12, 13, 14, 0}};
+        int[][] expectedArray = {{1, 0, 3, 0}, {0, 0, 0, 0}, {8, 0, 10, 0}, {0, 0, 0, 0}};
+        assertTrue(Arrays.deepEquals(expectedArray, multipleZeroMatrix(initialArray)));
+    }
 }
