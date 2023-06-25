@@ -31,7 +31,7 @@ public class Q7_RotateMatrix {
      * Solution 2: In place algorithm.
      *
      * When rotating by 90 degrees:
-     * The first row of the input matix becomes the first column of the output matrix in reverse.
+     * The first row of the input matrix becomes the first column of the output matrix in reverse.
      * The last row of the input matrix becomes the last column of the output matrix in reverse.
      *
      * The transpose is the flipped version of the matrix.
@@ -48,17 +48,51 @@ public class Q7_RotateMatrix {
      */
 
     public static int[][] transpose(int[][] arr) {
-        System.out.println(Arrays.deepToString(arr));
-        int n = arr.length;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        //System.out.println(Arrays.deepToString(arr));
+        int[][] transposed = new int[arr[0].length][arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                transposed[i][j] = arr[j][i];
+            }
+        }
+        return transposed;
+    }
+
+    public static int[][] transposeInPlace(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr[i].length; j++) {
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
             }
         }
+        return arr;
+    }
+
+    public static int[][] reverseCol(int[][] arr) {
+        for (int row = 0; row < arr.length; row++) {
+            for (int col = 0; col < arr[row].length / 2; col++) {
+                int temp = arr[row][col];
+                arr[row][col] = arr[row][arr[row].length - 1 - col];
+                arr[row][arr[row].length - 1 - col] = temp;
+            }
+        }
+        return arr;
+    }
+
+    public static int[][] reverseRow(int[][] arr) {
+        for (int i = 0; i < arr.length / 2; i++) {
+            // switch the row only (i)
+            int[] temp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = temp;
+        }
         System.out.println(Arrays.deepToString(arr));
         return arr;
     }
 
+    public static int[][] rotate90(int[][] arr) {
+        arr = transpose(arr);
+        return reverseRow(arr);
+    }
 }
