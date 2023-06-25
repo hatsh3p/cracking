@@ -14,9 +14,9 @@ Each question may contain multiple solutions and tests.
 - [x] 1.6 String Compression
 - [x] 1.7 Rotate Matrix
 - [x] 1.8 Zero Matrix
-- [ ] 1.9 String Rotation
+- [x] 1.9 String Rotation
 
-GOAL: Complete by 6/25
+:white_check_mark: GOAL: Complete by 6/25
 
 # Ch 2 Linked Lists (8)
 - [ ] 2.1 Remove Dups
@@ -45,7 +45,7 @@ GOAL: Complete by 7/2
 - [ ] 4.2 Minimal Tree
 - [ ] 4.3 List of Depths
 - [ ] 4.4 Check Balanced
-- [ ] 4.5 Validate BSt
+- [ ] 4.5 Validate BST
 - [ ] 4.6 Successor
 - [ ] 4.7 Build Order
 - [ ] 4.8 First Common Ancestor
