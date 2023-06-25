@@ -19,7 +19,7 @@ Each question may contain multiple solutions and tests.
 :white_check_mark: GOAL: Complete by 6/25
 
 # Ch 2 Linked Lists (8)
-- [ ] 2.1 Remove Dups
+- [x] 2.1 Remove Dups
 - [ ] 2.2 Return Kth to Last
 - [ ] 2.3 Delete Middle Node
 - [ ] 2.4 Partition
@@ -83,6 +83,6 @@ GOAL: Complete by 7/12
 GOAL: Complete by 7/17.
 
 # Progress
-4/53 Questions
+9/53 Questions
 
 
