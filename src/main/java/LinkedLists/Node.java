@@ -19,6 +19,7 @@ public class Node {
         current.next = node;
     }
 
+
     public String toString() {
         Node current = this;
         StringBuilder strBuild = new StringBuilder();
