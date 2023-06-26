@@ -32,7 +32,7 @@ class Q3_DeleteMiddleNodeTest {
     }
 
     @Test
-    void deleteMiddleNodeTest() {
+    void deleteMiddleNode_Node_List() {
         deleteMiddleNode(middle);
         Assertions.assertEquals(list2.toString(), list1.toString());
     }

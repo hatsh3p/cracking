@@ -24,13 +24,13 @@ class Q1_RemoveDupsTest {
         list2.appendToTail(3);
     }
     @Test
-    void removeDupsTest() {
+    void removeDups_DupsList_NoDupsList() {
         removeDups(list1);
         assertEquals(list2.toString(), list1.toString());
     }
 
     @Test
-    void removeDupsUsingSetTest() {
+    void removeDupsUsingSet_DupsList_NoDupsList() {
         removeDupsUsingSet(list1);
         assertEquals(list2.toString(), list1.toString());
     }

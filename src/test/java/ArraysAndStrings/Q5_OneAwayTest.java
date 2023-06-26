@@ -9,32 +9,32 @@ import static org.junit.jupiter.api.Assertions.*;
 class Q5_OneAwayTest {
 
     @Test
-    void isOneAwayTestTrue() {
+    void isOneAway_String_True() {
         Assertions.assertTrue(isOneAway("team", "steam"));
     }
 
     @Test
-    void isOneAwayTestFalse() {
+    void isOneAway_String_False() {
         Assertions.assertFalse(isOneAway("dream", "team"));
     }
 
     @Test
-    void oneEditReplaceTestTrue() {
+    void oneEditReplace_String_True() {
         Assertions.assertTrue(oneEditReplace("bilbo", "bimbo"));
     }
 
     @Test
-    void oneEditReplaceTestFalse() {
+    void oneEditReplace_String_False() {
         Assertions.assertFalse(oneEditReplace("bilbo", "timbo"));
     }
 
     @Test
-    void oneEditInsertTestTrue() {
+    void oneEditInsert_String_True() {
         Assertions.assertTrue(oneEditInsert("bilbo", "blbo"));
     }
 
     @Test
-    void oneEditInsertTestFalse() {
+    void oneEditInsert_String_False() {
         Assertions.assertFalse(oneEditInsert("bilbo", "blmo"));
     }
 }

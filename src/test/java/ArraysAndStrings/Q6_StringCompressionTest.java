@@ -9,32 +9,32 @@ import static org.junit.jupiter.api.Assertions.*;
 class Q6_StringCompressionTest {
 
     @Test
-    void compressBadTest1() {
+    void compressBad_String1_Compressed1() {
         Assertions.assertEquals("c5", compressBad("ccccc"));
     }
 
     @Test
-    void compressBadTest2() {
+    void compressBad_String2_String2() {
         Assertions.assertEquals("aab", compressBad("aab"));
     }
 
     @Test
-    void compressBadTest3() {
+    void compressBad_String3_Compressed3() {
         Assertions.assertEquals("a2b1c5a3", compressBad("aabcccccaaa"));
     }
 
     @Test
-    void compressBetterTest1() {
+    void compressBetter_String1_Compressed1() {
         Assertions.assertEquals("c5", compressBetter("ccccc"));
     }
 
     @Test
-    void compressBetterTest2() {
+    void compressBetter_String2_String2() {
         Assertions.assertEquals("aab", compressBetter("aab"));
     }
 
     @Test
-    void compressBetterTest3() {
+    void compressBetter_String3_Compressed3() {
         Assertions.assertEquals("a2b1c5a3", compressBetter("aabcccccaaa"));
     }
 }

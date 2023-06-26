@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class Q9_StringRotationTest {
 
     @Test
-    void isRotationTestTrue() {
+    void isRotation_String_True() {
         Assertions.assertTrue(isRotation("waterbottle", "erbottlewat"));
     }
 
     @Test
-    void isRotationTestFalse() {
+    void isRotation_String_False() {
         Assertions.assertFalse(isRotation("waterbottle", "erbomtlewat"));
     }
 }

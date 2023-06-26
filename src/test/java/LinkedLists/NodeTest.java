@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NodeTest {
     @Test
-    void toStringTest() {
+    void toString_List_String() {
         Node list1 = new Node(1);
         list1.appendToTail(2);
         list1.appendToTail(1);

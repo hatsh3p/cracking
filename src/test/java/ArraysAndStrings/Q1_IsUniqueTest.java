@@ -8,32 +8,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Q1_IsUniqueTest {
     @Test
-    void testIsUniqueFalse() {
+    void isUnique_NonUniqueString_False() {
         assertFalse(isUnique("bilbo"));
     }
 
     @Test
-    void testIsUniqueTrue() {
+    void isUnique_UniqueString_True() {
         assertTrue(isUnique("dog"));
     }
 
     @Test
-    void testIsUniqueModifiedFalse() {
+    void isUniqueModified_NonUniqueString_False() {
         assertFalse(isUniqueModified("bilbo"));
     }
 
     @Test
-    void testIsUniqueModifiedTrue() {
+    void isUniqueModified_UniqueString_True() {
         assertTrue(isUniqueModified("dog"));
     }
 
     @Test
-    void testIsUniqueNoAdditionalDSFalse() {
+    void isUniqueNoAdditionalDS_NonUniqueString_False() {
         assertFalse(isUniqueNoAdditionalDS("bilbo"));
     }
 
     @Test
-    void testIsUniqueNoAdditionalDSTrue() {
+    void testIsUniqueNoAdditionalDS_NonUniqueString_True() {
         assertTrue(isUniqueNoAdditionalDS("dog"));
     }
 }

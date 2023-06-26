@@ -20,52 +20,52 @@ class Q2_ReturnKthToLastTest {
     }
 
     @Test
-    void getKthToLastFirstTest() {
+    void getKthToLast_K5_List() {
         Assertions.assertEquals(1, getKthToLast(list, 5));
     }
 
     @Test
-    void getKthToLastSecondToLastKTest() {
+    void getKthToLast_K2_List() {
         Assertions.assertEquals(4, getKthToLast(list, 2));
     }
 
     @Test
-    void getKthToLastLastKTest() {
+    void getKthToLast_K1_List() {
         Assertions.assertEquals(5, getKthToLast(list, 1));
     }
 
     @Test
-    void getKthToLastInvalidKTest1() {
+    void getKthToLast_TooLargeK_Negative1() {
         Assertions.assertEquals(-1, getKthToLast(list, 6));
     }
 
     @Test
-    void getKthToLastInvalidKTest2() {
+    void getKthToLast_TooSmallK_Negative1() {
         Assertions.assertEquals(-1, getKthToLast(list, 0));
     }
 
     @Test
-    void getKthToLastOptimalFirstTest() {
+    void getKthToLastOptimal_K5_List() {
         Assertions.assertEquals(1, getKthToLastOptimal(list, 5));
     }
 
     @Test
-    void getKthToLastOptimalSecondToLastKTest() {
+    void getKthToLastOptimal_K2_List() {
         Assertions.assertEquals(4, getKthToLastOptimal(list, 2));
     }
 
     @Test
-    void getKthToLastOptimalLastKTest() {
+    void getKthToLastOptimal_K1_List() {
         Assertions.assertEquals(5, getKthToLastOptimal(list, 1));
     }
 
     @Test
-    void getKthToLastOptimalInvalidKTest1() {
+    void getKthToLastOptimal_TooLargeK_Negative1() {
         Assertions.assertEquals(-1, getKthToLastOptimal(list, 6));
     }
 
     @Test
-    void getKthToLastOptimalInvalidKTest2() {
+    void getKthToLastOptimal_TooSmallK_Negative1() {
         Assertions.assertEquals(-1, getKthToLastOptimal(list, 0));
     }
 

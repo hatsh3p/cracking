@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class Q2_CheckPermutationTest {
 
     @Test
-    void isPermutationTrue() {
+    void isPermutation_Permutation_True() {
         Assertions.assertTrue(isPermutation("bat", "tab"));
     }
 
     @Test
-    void isPermutationFalse() {
+    void isPermutation_NotPermutation_False() {
         Assertions.assertFalse(isPermutation("cat", "tab"));
     }
 }
