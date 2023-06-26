@@ -22,7 +22,7 @@ Each question may contain multiple solutions and tests.
 - [x] 2.1 Remove Dups
 - [x] 2.2 Return Kth to Last
 - [x] 2.3 Delete Middle Node
-- [ ] 2.4 Partition
+- [x] 2.4 Partition
 - [ ] 2.5 Sum Lists
 - [ ] 2.6 Palindrome
 - [ ] 2.7 Intersection
@@ -83,6 +83,6 @@ GOAL: Complete by 7/12
 GOAL: Complete by 7/17.
 
 # Progress
-10/53 Questions
+12/53 Questions
 
 
