@@ -2,7 +2,8 @@
 This repository documents my work through Cracking the Coding Interview.
 
 ## Description
-The repository is broken down by chapters. Each chapter is organized by package (ex. ArraysAndStrings) with questions (ex. Q1_IsUnique).
+The repository is broken down by chapters. Each chapter is organized by package 
+(ex. ArraysAndStrings) with questions (ex. Q1_IsUnique).
 Each question may contain multiple solutions and tests.
 
 # Ch 1 Arrays & Strings (9)
@@ -19,12 +20,14 @@ Each question may contain multiple solutions and tests.
 :white_check_mark: GOAL: Complete by 6/25
 
 # Ch 2 Linked Lists (8)
+TODO: Return to recursive solutions to some of these problems after Ch.8, 
+Recursion and Dynamic Programming.
 - [x] 2.1 Remove Dups
 - [x] 2.2 Return Kth to Last
 - [x] 2.3 Delete Middle Node
 - [x] 2.4 Partition
-- [ ] 2.5 Sum Lists
-- [ ] 2.6 Palindrome
+- [x] 2.5 Sum Lists
+- [x] 2.6 Palindrome
 - [ ] 2.7 Intersection
 - [ ] 2.8 Loop Detection
 
