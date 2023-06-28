@@ -10,7 +10,7 @@ public class Node {
         this.data = data;
     }
 
-    void appendToTail(int data) {
+    public void appendToTail(int data) {
         Node node = new Node(data);
         Node current = this;
         while (current.next != null) {
@@ -19,6 +19,23 @@ public class Node {
         current.next = node;
     }
 
+    public void appendToTail(Node node) {
+        Node current = this;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = node;
+    }
+
+    public int size() {
+        Node current = this;
+        int size = 0;
+        while (current != null
+            ++size;
+            current = current.next;
+        }
+        return size;
+    }
 
     public String toString() {
         Node current = this;

@@ -1,18 +1,27 @@
 package LinkedLists;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class NodeTest {
+    Node list;
+    @BeforeEach
+    void setUp() {
+        list = new Node(1);
+        list.appendToTail(2);
+        list.appendToTail(3);
+        list.appendToTail(4);
+    }
+
+    @Test
+    void size_List_Int() {
+        Assertions.assertEquals(4, list.size());
+    }
     @Test
     void toString_List_String() {
-        Node list1 = new Node(1);
-        list1.appendToTail(2);
-        list1.appendToTail(1);
-        list1.appendToTail(3);
-        list1.appendToTail(2);
-        Assertions.assertEquals("1 -> 2 -> 1 -> 3 -> 2 -> null", list1.toString());
+        Assertions.assertEquals("1 -> 2 -> 3 -> 4 -> null", list.toString());
     }
 }
