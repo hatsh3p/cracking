@@ -28,10 +28,10 @@ Recursion and Dynamic Programming.
 - [x] 2.4 Partition
 - [x] 2.5 Sum Lists
 - [x] 2.6 Palindrome
-- [ ] 2.7 Intersection
-- [ ] 2.8 Loop Detection
+- [x] 2.7 Intersection
+- [x] 2.8 Loop Detection
 
-GOAL: Complete by 6/28
+:white_check_mark: GOAL: Complete by 6/28
 
 # Ch 3 Stacks & Queues (6)
 - [ ] 3.1 Three in One
@@ -86,6 +86,6 @@ GOAL: Complete by 7/12
 GOAL: Complete by 7/17.
 
 # Progress
-12/53 Questions
+17/53 Questions
 
 
