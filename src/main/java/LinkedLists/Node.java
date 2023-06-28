@@ -30,7 +30,7 @@ public class Node {
     public int size() {
         Node current = this;
         int size = 0;
-        while (current != null
+        while (current != null) {
             ++size;
             current = current.next;
         }
