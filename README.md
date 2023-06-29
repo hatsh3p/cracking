@@ -34,11 +34,10 @@ Recursion and Dynamic Programming.
 :white_check_mark: GOAL: Complete by 6/28
 
 # Ch 3 Stacks & Queues (6)
-- [ ] 3.1 Three in One
-- [ ] 3.2 Stack Min
-- [ ] 3.3 Stack of Plates
-- [ ] 3.4 Queue via Stacks
-- [ ] 3.5 Sort Stack
+- [x] 3.1 Three in One
+- [x] 3.2 Stack Min
+- [x] 3.4 Queue via Stacks
+- [x] 3.5 Sort Stack
 - [ ] 3.6 Animal Shelter 
 
 GOAL: Complete by 7/2
