@@ -36,11 +36,12 @@ Recursion and Dynamic Programming.
 # Ch 3 Stacks & Queues (6)
 - [x] 3.1 Three in One
 - [x] 3.2 Stack Min
+- [x] 3.3 Stack of Plates
 - [x] 3.4 Queue via Stacks
 - [x] 3.5 Sort Stack
-- [ ] 3.6 Animal Shelter 
+- [x] 3.6 Animal Shelter 
 
-GOAL: Complete by 7/2
+:white_check_mark: GOAL: Complete by 7/2 (Actual: 7/5)
 
 # Ch 4 Trees & Graphs (12)
 - [ ] 4.1 Route Between Nodes

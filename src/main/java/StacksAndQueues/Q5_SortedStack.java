@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.EmptyStackException;
 
+/**
+ * Problem: Write a program to sort a stack such that the smalles titems are on
+ * the top. You can use an additional temporary stack, but you may not copy
+ * the elements into any other data structure (such as an array). The stack
+ * supports the following operations: push, pop, peek, isEmpty.
+ */
 public class Q5_SortedStack {
     /**
      * Solution 1: I created a stack that keeps the minimum element on top.
