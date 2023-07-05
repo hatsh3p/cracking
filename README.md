@@ -42,50 +42,91 @@ Recursion and Dynamic Programming.
 - [x] 3.6 Animal Shelter 
 
 :white_check_mark: GOAL: Complete by 7/2 (Actual: 7/5)
+Will update the next dates accordingly.
 
 # Ch 4 Trees & Graphs (12)
 - [ ] 4.1 Route Between Nodes
 - [ ] 4.2 Minimal Tree
 - [ ] 4.3 List of Depths
-- [ ] 4.4 Check Balanced
+- [ ] 4.4 Check Balanced (by 7/6)
 - [ ] 4.5 Validate BST
-- [ ] 4.6 Successor
-- [ ] 4.7 Build Order
+- [ ] 4.6 Successor (by 7/9)
+- [ ] 4.7 Build Order 
 - [ ] 4.8 First Common Ancestor
-- [ ] 4.9 BST Sequences
-- [ ] 4.10 Check Subtree
+- [ ] 4.9 BST Sequences (by 7/10)
+- [ ] 4.10 Check Subtree 
 - [ ] 4.11 Random Node
-- [ ] 4.12 Paths with Sum
+- [ ] 4.12 Paths with Sum (by 7/11)
 
-GOAL: Complete by 7/6
+GOAL: Complete by 7/11
 
 # Ch 5 Bit Manipulation (8)
 - [ ] 5.1 Insertion
 - [ ] 5.2 Binary to String
-- [ ] 5.3 Flip Bit to Win
-- [ ] 5.4 Next Number
+- [ ] 5.3 Flip Bit to Win (by 7/12)
+- [ ] 5.4 Next Number 
 - [ ] 5.5 Debugger
-- [ ] 5.6 Conversion
+- [ ] 5.6 Conversion (by 7/13)
 - [ ] 5.7 Pairwise Swap
 - [ ] 5.8 Draw Line
 
-GOAL: Complete by 7/12
+GOAL: Complete by 7/14
 
 # Ch 6 Math & Logic Puzzles (10)
-- [ ] 6.1 The Heavy Pill
-- [ ] 6.2 Basketball
-- [ ] 6.3 Dominos
+- [ ] 6.1 The Heavy Pill (by 7/14)
+- [ ] 6.2 Basketball 
+- [ ] 6.3 Dominos (by 7/16)
 - [ ] 6.4 Ants on a Triangle
 - [ ] 6.5 Jugs of Water
-- [ ] 6.6 Blue-eyed Island
+- [ ] 6.6 Blue-eyed Island (by 7/17)
 - [ ] 6.7 The Apocalypse
 - [ ] 6.8 The Egg Drop Problem
-- [ ] 6.9 100 Lockers
-- [ ] 6.10 Poison
+- [ ] 6.9 100 Lockers (by 7/18)
+- [ ] 6.10 Poison (by 7/19)
 
-GOAL: Complete by 7/17.
+GOAL: Complete by 7/19.
 
-# Progress
-17/53 Questions
+# Milestone 1
+Progress 23/53 Questions
+
+# Ch 8 Recursion and Dynamic Programming (14)
+
+GOAL: Complete by 7/28
+
+# Ch 10 Sorting and Searching (11)
+
+GOAL: Complete by 8/3
+
+# Ch 7 Object-Oriented Design (12)
+
+GOAL: Complete by 8/10
+
+# Ch 13 Java (8)
+
+GOAL: Complete by 8/16
+
+# Milestone 2
+
+# Ch 9 System Design and Scalability (8)
+
+GOAL: Complete by 8/18
+
+# Ch 11 Testing (6)
+
+GOAL: Complete by 8/22
+
+# Ch 13 Databases (7)
+
+GOAL: Complete by 8/29
+
+# Milestone 3
+
+# Ch 15 Threads and Locks (skip)
+
+# Ch 16 Moderate Problems (26)
+
+# Ch 17 Hard Problems (26)
+
+
 
 
