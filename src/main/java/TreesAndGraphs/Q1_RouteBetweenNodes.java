@@ -1,6 +1,6 @@
 package TreesAndGraphs;
 
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * Problem: Given a directed graph and two nodes (S and E), design an algorithm to
@@ -11,7 +11,7 @@ import java.util.LinkedList;
  */
 public class Q1_RouteBetweenNodes {
     /**
-     * Solution: Combination of CTCI and @TuringFly.
+     * Solution 1: Combination of CTCI and @TuringFly.
      */
     enum State { Unvisited, Visited, Visiting; }
 
@@ -73,4 +73,99 @@ public class Q1_RouteBetweenNodes {
         System.out.println(search(g, start, end));
     }
 
+    /**
+     * Solution 2: Help from @decaf.
+     * This can be solved iteratively or recursively.
+     * Can use a set to manage the state or build it into the node class.
+     *
+     * Two algorithms:
+     * (1) breadth first search - Check the first node connected to a node
+     * (2) depth first search - Check all of the nodes down one node.
+     * before going down that node.
+     *
+     * You can use data structures to accomplish DFS v. BFS.
+     * (1) queue - If you add the nodes to a queue, then the nodes will be added
+     * and removed in breadth first order.
+     * (2) stack - If you add the nodes to a stack, then the nodes will be added
+     * and removed in depth first order.
+     */
+    public static class GraphNode {
+        List<GraphNode> nodes;
+
+        public GraphNode() {
+            nodes = new ArrayList<>();
+        }
+    }
+
+    public static boolean isRouteBFS(GraphNode s, GraphNode d) {
+        if (s == d) {
+            return true;
+        }
+        Set<GraphNode> visitedNodes = new HashSet<>();
+        LinkedList<GraphNode> toVisit = new LinkedList<>(); // Treat as queue.
+
+        toVisit.addAll(s.nodes);
+        visitedNodes.add(s);
+
+        while (!toVisit.isEmpty()) {
+            GraphNode node = toVisit.getFirst(); // Queue.
+            if (node == d) {
+                return true;
+            }
+            visitedNodes.add(node);
+            for (GraphNode n: node.nodes) {
+                if (!toVisit.contains(n)) {
+                    toVisit.addFirst(n);
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean isRouteDFS(GraphNode s, GraphNode d) {
+        if (s == d) {
+            return true;
+        }
+        Set<GraphNode> visitedNodes = new HashSet<>();
+        LinkedList<GraphNode> toVisit = new LinkedList<>(); // Treat as stack.
+
+        toVisit.addAll(s.nodes);
+        visitedNodes.add(s);
+
+        while (!toVisit.isEmpty()) {
+            GraphNode node = toVisit.getLast(); // Stack
+            if (node == d) {
+                return true;
+            }
+            visitedNodes.add(node);
+            for (GraphNode n: node.nodes) {
+                if (!toVisit.contains(n)) {
+                    toVisit.addFirst(n);
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean recursiveIsRoute(GraphNode s, GraphNode d) {
+        if (s == d) {
+            return true;
+        }
+        Set<GraphNode> visited = new HashSet<>();
+        visited.add(s);
+        return recursiveIsRoute(s, d, visited);
+    }
+
+    private static boolean recursiveIsRoute(GraphNode s, GraphNode d, Set<GraphNode> visited) {
+        for (GraphNode n: s.nodes) {
+            if (n == d) {
+                return true;
+            }
+            if (!visited.contains(n)) {
+                visited.add(n);
+                return recursiveIsRoute(n, d, visited);
+            }
+        }
+        return false;
+    }
 }
