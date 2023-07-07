@@ -1,6 +1,9 @@
 package TreesAndGraphs;
+
+
 /* Simple graph implementation based on @TuringFly from github */
-public class TreeNode {
+public class TreeNode
+{
     private TreeNode adjacent[];
     public int adjacentCount;
     private String vertex;

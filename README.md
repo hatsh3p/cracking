@@ -42,12 +42,11 @@ Recursion and Dynamic Programming.
 - [x] 3.6 Animal Shelter 
 
 :white_check_mark: GOAL: Complete by 7/2 (Actual: 7/5)
-Will update the next dates accordingly.
 
 # Ch 4 Trees & Graphs (12)
-- [ ] 4.1 Route Between Nodes
-- [ ] 4.2 Minimal Tree
-- [ ] 4.3 List of Depths
+- [x] 4.1 Route Between Nodes
+- [x] 4.2 Minimal Tree
+- [x] 4.3 List of Depths
 - [ ] 4.4 Check Balanced (by 7/6)
 - [ ] 4.5 Validate BST
 - [ ] 4.6 Successor (by 7/9)
@@ -87,7 +86,7 @@ GOAL: Complete by 7/14
 GOAL: Complete by 7/19.
 
 # Milestone 1
-Progress 23/53 Questions
+Progress 25/53 Questions
 
 # Ch 8 Recursion and Dynamic Programming (14)
 
