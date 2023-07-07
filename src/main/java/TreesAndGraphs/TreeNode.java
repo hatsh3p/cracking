@@ -1,18 +1,18 @@
 package TreesAndGraphs;
 /* Simple graph implementation based on @TuringFly from github */
-public class Node {
-    private Node adjacent[];
+public class TreeNode {
+    private TreeNode adjacent[];
     public int adjacentCount;
     private String vertex;
     public Q1_RouteBetweenNodes.State state;
 
-    public Node(String vertex, int adjacentLength) {
+    public TreeNode(String vertex, int adjacentLength) {
         this.vertex = vertex;
         adjacentCount = 0;
-        adjacent = new Node[adjacentLength];
+        adjacent = new TreeNode[adjacentLength];
     }
 
-    public void addAdjacent(Node x) {
+    public void addAdjacent(TreeNode x) {
         if (adjacentCount < adjacent.length) {
             this.adjacent[adjacentCount] = x;
             adjacentCount++;
@@ -21,7 +21,7 @@ public class Node {
         }
     }
 
-    public Node[] getAdjacent() {
+    public TreeNode[] getAdjacent() {
         return adjacent;
     }
 
