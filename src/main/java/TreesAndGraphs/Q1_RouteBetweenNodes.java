@@ -15,19 +15,19 @@ public class Q1_RouteBetweenNodes {
      */
     enum State { Unvisited, Visited, Visiting; }
 
-    public static boolean search(Graph g, TreeNode start, TreeNode end) {
+    public static boolean search(Graph g, Q1TreeNode start, Q1TreeNode end) {
         if (start == end) return true;
-        LinkedList<TreeNode> q = new LinkedList<>();
-        for (TreeNode u: g.getNodes()) {
+        LinkedList<Q1TreeNode> q = new LinkedList<>();
+        for (Q1TreeNode u: g.getNodes()) {
             u.state = State.Unvisited;
         }
         start.state = State.Visiting;
         q.add(start);
-        TreeNode u;
+        Q1TreeNode u;
         while (!q.isEmpty()) {
             u = q.removeFirst();
             if (u != null) {
-                for (TreeNode v : u.getAdjacent()) {
+                for (Q1TreeNode v : u.getAdjacent()) {
                     if (v.state == State.Unvisited) {
                         if (v == end) {
                             return true;
@@ -46,13 +46,13 @@ public class Q1_RouteBetweenNodes {
 
     public static Graph createNewGraph() {
         Graph g = new Graph();
-        TreeNode[] temp = new TreeNode[6];
-        temp[0] = new TreeNode("a", 3);
-        temp[1] = new TreeNode("b", 0);
-        temp[2] = new TreeNode("c", 0);
-        temp[3] = new TreeNode("d", 1);
-        temp[4] = new TreeNode("e", 1);
-        temp[5] = new TreeNode("f", 0);
+        Q1TreeNode[] temp = new Q1TreeNode[6];
+        temp[0] = new Q1TreeNode("a", 3);
+        temp[1] = new Q1TreeNode("b", 0);
+        temp[2] = new Q1TreeNode("c", 0);
+        temp[3] = new Q1TreeNode("d", 1);
+        temp[4] = new Q1TreeNode("e", 1);
+        temp[5] = new Q1TreeNode("f", 0);
         temp[0].addAdjacent(temp[1]);
         temp[0].addAdjacent(temp[2]);
         temp[0].addAdjacent(temp[3]);
@@ -67,9 +67,9 @@ public class Q1_RouteBetweenNodes {
 
     public static void main(String a[]) {
         Graph g = createNewGraph();
-        TreeNode[] n = g.getNodes();
-        TreeNode start = n[3];
-        TreeNode end = n[5];
+        Q1TreeNode[] n = g.getNodes();
+        Q1TreeNode start = n[3];
+        Q1TreeNode end = n[5];
         System.out.println(search(g, start, end));
     }
 

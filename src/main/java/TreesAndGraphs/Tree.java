@@ -1,5 +1,5 @@
 package TreesAndGraphs;
 
 public class Tree {
-    public TreeNode root;
+    public Q1TreeNode root;
 }

@@ -3,8 +3,6 @@ package TreesAndGraphs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class Q2_MinimalTreeTest {
     int[] array;
     BST bst;
@@ -16,7 +14,7 @@ class Q2_MinimalTreeTest {
 
     @Test
     void createMinimalBST_Arr_BST() {
-        BSTNode root = Q2_MinimalTree.createMinimalBST(array);
+        TreeNode root = Q2_MinimalTree.createMinimalBST(array);
         bst = new BST(root);
         bst.preOrderTraversal();
     }

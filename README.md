@@ -48,7 +48,7 @@ Recursion and Dynamic Programming.
 - [x] 4.2 Minimal Tree
 - [x] 4.3 List of Depths
 - [x] 4.4 Check Balanced (by 7/6)
-- [ ] 4.5 Validate BST
+- [x] 4.5 Validate BST
 - [ ] 4.6 Successor (by 7/9)
 - [ ] 4.7 Build Order 
 - [ ] 4.8 First Common Ancestor

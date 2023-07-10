@@ -1,13 +1,13 @@
 package TreesAndGraphs;
 
 public class BST {
-    BSTNode root;
+    TreeNode root;
 
     public BST() {
         root = null;
     }
 
-    public BST(BSTNode root) {
+    public BST(TreeNode root) {
         this.root = root;
     }
 
@@ -28,7 +28,7 @@ public class BST {
      * Recursive case 1: key < node.key (recurse left).
      * Recursive case 2: key > node.key (recurse right).
      */
-    private boolean find(BSTNode node, int key) {
+    private boolean find(TreeNode node, int key) {
         if (node == null) {
             return false;
         } else if (key == node.key) {
@@ -48,10 +48,10 @@ public class BST {
     public void insert(int key) {
         root = insert(root, key); // Start with the root node.
     }
-    private BSTNode insert(BSTNode node, int key) {
+    private TreeNode insert(TreeNode node, int key) {
         // Base case: Insert at the leaf.
         if (node == null) {
-            return new BSTNode(key);
+            return new TreeNode(key);
         } else if (key < node.key) {
             // Insert at the left/right depending on the key and node.key
             // Rebuild the tree in case the child is where the node is inserted?
@@ -82,7 +82,7 @@ public class BST {
         System.out.println();
     }
 
-    private void inOrderTraversal(BSTNode node) {
+    private void inOrderTraversal(TreeNode node) {
         if (node != null) {
             inOrderTraversal(node.left);
             System.out.printf("%d ", node.key);
@@ -98,7 +98,7 @@ public class BST {
         System.out.println();
     }
 
-    private void preOrderTraversal(BSTNode node) {
+    private void preOrderTraversal(TreeNode node) {
         if (node != null) {
             System.out.printf("%d ", node.key);
             preOrderTraversal(node.left);
@@ -113,7 +113,7 @@ public class BST {
         System.out.println();
     }
 
-    private void postOrderTraversal(BSTNode node) {
+    private void postOrderTraversal(TreeNode node) {
         if (node != null) {
             postOrderTraversal(node.left);
             postOrderTraversal(node.right);
@@ -130,7 +130,7 @@ public class BST {
         root = delete(root, key);
     }
 
-    private BSTNode delete(BSTNode node, int key) {
+    private TreeNode delete(TreeNode node, int key) {
         // Base case: Key not found.
         if (node == null) {
             return null;
@@ -168,7 +168,7 @@ public class BST {
      * This node is a grandparent to a leaf. Copy the data, remove the node,
      * and return the data.
      */
-    private int removeSmallest(BSTNode node) {
+    private int removeSmallest(TreeNode node) {
         if (node.left.left == null) {
             int smallest = node.left.key;
             node.left = node.left.right;

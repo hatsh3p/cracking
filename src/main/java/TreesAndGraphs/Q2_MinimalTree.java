@@ -17,16 +17,16 @@ public class Q2_MinimalTree {
      * with the data from the middle position in the array. Then there are
      * recursive calls to do the same on the left and right.
      */
-    public static BSTNode createMinimalBST(int[] arr) {
+    public static TreeNode createMinimalBST(int[] arr) {
         return createMinimalBST(arr, 0, arr.length - 1);
     }
 
-    private static BSTNode createMinimalBST(int[] arr, int start, int end) {
+    private static TreeNode createMinimalBST(int[] arr, int start, int end) {
         if (end < start) {
             return null;
         }
         int mid = (start + end) / 2;
-        BSTNode node = new BSTNode(arr[mid]);
+        TreeNode node = new TreeNode(arr[mid]);
         node.left = createMinimalBST(arr, start, mid - 1);
         node.right = createMinimalBST(arr, mid + 1, end);
         return node;

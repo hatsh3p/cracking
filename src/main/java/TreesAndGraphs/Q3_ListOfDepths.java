@@ -1,6 +1,5 @@
 package TreesAndGraphs;
 
-import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -14,22 +13,22 @@ public class Q3_ListOfDepths {
      * Solution 1: CTCI
      * Modify in order traversal algorithm...
      */
-    public static ArrayList<LinkedList<BSTNode>> createLevelLinkedList(BSTNode root) {
+    public static ArrayList<LinkedList<TreeNode>> createLevelLinkedList(TreeNode root) {
         // Create an ArrayList of LinkedLists to store each level.
-        ArrayList<LinkedList<BSTNode>> lists = new ArrayList<>();
+        ArrayList<LinkedList<TreeNode>> lists = new ArrayList<>();
         // Create the LinkedList for the root level and recursively call those for subsequent levels.
         createLevelLinkedList(root, lists, 0);
         return lists;
     }
 
-    public static void createLevelLinkedList(BSTNode node, ArrayList<LinkedList<BSTNode>> lists, int level) {
+    public static void createLevelLinkedList(TreeNode node, ArrayList<LinkedList<TreeNode>> lists, int level) {
         if (node == null) return; // Base case
 
         // Create a LinkedList for a level and add it the ArrayList OR get
         // the existing list for that level.
-        LinkedList<BSTNode> list = null;
+        LinkedList<TreeNode> list = null;
         if (lists.size() == level) { // The level is not contained in list.
-            list = new LinkedList<BSTNode>();
+            list = new LinkedList<TreeNode>();
             /*
             Levels are traversed in order. So if this is the first time, we've
             listed level i , we must have seen levels 0 through i - 1. We can

@@ -3,15 +3,15 @@ package TreesAndGraphs;
 /* Simple graph implementation based on @TuringFly from github */
 public class Graph {
     public static int MAX_VERTICES = 6;
-    private TreeNode vertices[];
+    private Q1TreeNode vertices[];
     public int count;
 
     public Graph() {
-        vertices = new TreeNode[MAX_VERTICES];
+        vertices = new Q1TreeNode[MAX_VERTICES];
         count = 0;
     }
 
-    public void addNode(TreeNode x) {
+    public void addNode(Q1TreeNode x) {
         if (count < vertices.length) {
             vertices[count] = x;
             count++;
@@ -20,7 +20,7 @@ public class Graph {
         }
     }
 
-    public TreeNode[] getNodes() {
+    public Q1TreeNode[] getNodes() {
         return vertices;
     }
 

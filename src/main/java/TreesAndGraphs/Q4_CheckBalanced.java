@@ -13,7 +13,7 @@ public class Q4_CheckBalanced {
      * On the right track, but is double counting the depth... How can we fix
      * this...
      */
-    public static boolean isBalanced(BSTNode node) {
+    public static boolean isBalanced(TreeNode node) {
         int left = getHeight(node.left);
         int right = getHeight(node.right);
         System.out.println(right);
@@ -21,7 +21,7 @@ public class Q4_CheckBalanced {
         return Math.abs(right - left) <= 1;
     }
 
-    private static int getHeight(BSTNode node) {
+    private static int getHeight(TreeNode node) {
         if (node == null) {
             return 0;
         } else if (node.left == null & node.right == null) {
@@ -42,12 +42,12 @@ public class Q4_CheckBalanced {
      * Need to cut some of the calls to getHeight.
      *
      */
-    int getHeight2(BSTNode node) {
+    int getHeight2(TreeNode node) {
         if (node == null) return -1;
         return Math.max(getHeight2(node.left), getHeight2(node.right)) + 1;
     }
 
-    static boolean isBalanced2(BSTNode node) {
+    static boolean isBalanced2(TreeNode node) {
         if (node == null) return true; // Base Case
         int heightDiff = getHeight(node.left) - getHeight(node.right);
         if (Math.abs(heightDiff) > 1) {
@@ -61,7 +61,7 @@ public class Q4_CheckBalanced {
     /**
      * Solution 3: O(N) time and O(H) space where H is the height of the tree.
      */
-    int checkHeight(BSTNode node) {
+    int checkHeight(TreeNode node) {
         if (node == null) return -1;
         int leftHeight = checkHeight(node.left);
         if (leftHeight == Integer.MIN_VALUE) return Integer.MIN_VALUE;
@@ -77,7 +77,7 @@ public class Q4_CheckBalanced {
         }
     }
 
-    boolean isBalanced3(BSTNode node) {
+    boolean isBalanced3(TreeNode node) {
         return checkHeight(node) != Integer.MIN_VALUE;
     }
 }
