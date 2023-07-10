@@ -35,7 +35,7 @@ public class Q5_ValidateBST {
     }
 
     /**
-     * Solution 2:
+     * Solution 2: CTCI Solution
      */
     public static boolean checkBST(TreeNode n) {
         return checkBST(n, null, null);

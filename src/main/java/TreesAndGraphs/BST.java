@@ -64,6 +64,29 @@ public class BST {
     }
 
     /**
+     * insert()
+     * Given a key, insert it into the BST.
+     * BST insert always inserts a leaf node where find would return false.
+     */
+    public void insert(TreeNode newNode) {
+        root = insert(root, newNode); // Start with the root node.
+    }
+    private TreeNode insert(TreeNode node, TreeNode newNode) {
+        // Base case: Insert at the leaf.
+        if (node == null) {
+            return newNode;
+        } else if (newNode.key < node.key) {
+            // Insert at the left/right depending on the key and node.key
+            // Rebuild the tree in case the child is where the node is inserted?
+            node.left = insert(node.left, newNode);
+        } else {
+            // This will insert duplicates on the right side of the tree.
+            node.right = insert(node.right, newNode);
+        }
+        return node;
+    }
+
+    /**
      * What's the deal with tree traversals?
      * Tree traversals (in-order, pre-order, post-order)
      * (1) in-order produces sorted order. To do this you need to do visit in
@@ -177,5 +200,6 @@ public class BST {
             return removeSmallest(node.left);
         }
     }
+
 
 }
