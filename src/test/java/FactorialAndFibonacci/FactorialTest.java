@@ -23,18 +23,18 @@ class FactorialTest {
 
     @Test
     void factorialOf0Recursive() {
-        Assertions.assertEquals(1, Factorial.getFactorialIterative(0));
+        Assertions.assertEquals(1, Factorial.getFactorialRecursive(0));
     }
     @Test
     void factorialOf1Recursive() {
-        Assertions.assertEquals(1, Factorial.getFactorialIterative(1));
+        Assertions.assertEquals(1, Factorial.getFactorialRecursive(1));
     }
     @Test
     void factorialOf3Recursive() {
-        Assertions.assertEquals(6, Factorial.getFactorialIterative(3));
+        Assertions.assertEquals(6, Factorial.getFactorialRecursive(3));
     }
     @Test
     void factorialOf5Recursive() {
-        Assertions.assertEquals(120, Factorial.getFactorialIterative(5));
+        Assertions.assertEquals(120, Factorial.getFactorialRecursive(5));
     }
 }
