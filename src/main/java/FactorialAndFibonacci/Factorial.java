@@ -18,6 +18,11 @@ public class Factorial {
         return factorial;
     }
 
+    /**
+     * Solution: An recursive solution to finding the factorial.
+     * Base case: n == 0 or n == 1
+     * Recursive case: For all other values of n, return f(n - 1) * n.
+     */
     public static int getFactorialRecursive(int n) {
         // Base case
         if (n == 0 || n == 1) {
