@@ -22,6 +22,10 @@ public class Fibonacci {
         }
     }
 
+    /**
+     * Solution 2: Dynamic
+     * Use a table to store and calculate fibonacci.
+     */
     public static int getFibonacciDynamic(int n) {
         if (n < 1) {
             throw new ArithmeticException();
@@ -39,18 +43,32 @@ public class Fibonacci {
         return fibonacciTable[n];
     }
 
+    /**
+     * Solution 3: Iterative
+     * Use two variables to keep track of (n - 1) and (n - 2) and another as
+     * a temporary variable.
+     * Iterate from 3 to n adding the two previous numbers to get the nth num
+     * in fibonacci.
+     */
     public static int getFibonacciIterative(int n) {
         if (n < 1) {
             throw new ArithmeticException();
         }
         if (n == 1) {
             return 0;
+        } else if (n == 2) {
+            return 1;
         }
-        int fibonacci = 1;
-        for (int i = 2; i < n; i++) {
-            fibonacci +=
+        // Iterative fibonacci is the sum of the two previous values.
+        int n1 = 0;
+        int n2 = 1;
+        int temp;
+        for (int i = 3; i < n + 1; i++) {
+            temp = n1;
+            n1 = n2;
+            n2 = n1 + temp;
         }
 
-        return 0;
+        return n2;
     }
 }

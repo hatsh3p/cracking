@@ -2,10 +2,16 @@ package FactorialAndFibonacci;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class FibonacciTest {
+    @Test
+    void getFibonacciOf0Dynamic() {
+        ArithmeticException thrown = Assertions.assertThrows(ArithmeticException.class,
+                () -> Fibonacci.getFibonacciDynamic(0));
+    }
     @Test
     void getFibonacciOf1Dynamic() {
         Assertions.assertEquals(0, Fibonacci.getFibonacciDynamic(1));
@@ -38,7 +44,11 @@ class FibonacciTest {
     void getFibonacciOf8Dynamic() {
         Assertions.assertEquals(13, Fibonacci.getFibonacciDynamic(8));
     }
-
+    @Test
+    void getFibonacciOf0Recursive() {
+        ArithmeticException thrown = Assertions.assertThrows(ArithmeticException.class,
+                () -> Fibonacci.getFibonacciRecursive(0));
+    }
     @Test
     void getFibonacciOf1Recursive() {
         Assertions.assertEquals(0, Fibonacci.getFibonacciRecursive(1));
@@ -72,6 +82,11 @@ class FibonacciTest {
         Assertions.assertEquals(13, Fibonacci.getFibonacciRecursive(8));
     }
 
+    @Test
+    void getFibonacciOf0Iterative() {
+        ArithmeticException thrown = Assertions.assertThrows(ArithmeticException.class,
+                () -> Fibonacci.getFibonacciIterative(0));
+    }
     @Test
     void getFibonacciOf1Iterative() {
         Assertions.assertEquals(0, Fibonacci.getFibonacciIterative(1));
