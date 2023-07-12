@@ -8,6 +8,9 @@ public class Fibonacci {
      * Base case 2: n == 2, return 1
      * Recursive case: getFib(n-1) + getFib(n-2) i.e. sum of the fib of the next
      * two consecutive numbers.
+     *
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
      */
     public static int getFibonacciRecursive(int n) {
         if (n < 1) {
@@ -25,6 +28,9 @@ public class Fibonacci {
     /**
      * Solution 2: Dynamic
      * Use a table to store and calculate fibonacci.
+     *
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
      */
     public static int getFibonacciDynamic(int n) {
         if (n < 1) {
@@ -49,6 +55,8 @@ public class Fibonacci {
      * a temporary variable.
      * Iterate from 3 to n adding the two previous numbers to get the nth num
      * in fibonacci.
+     * Time Complexity: O(N)
+     * Space Complexity: O(1)
      */
     public static int getFibonacciIterative(int n) {
         if (n < 1) {
