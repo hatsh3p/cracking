@@ -54,13 +54,46 @@ public class ArrayList<T> {
 
     // Insert
     public void add(int index, T item) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
 
+        // If there isn't enough space resize.
+        if (size == capacity) {
+            resizeArr();
+        }
+
+        // Copy backwards shifting one space down until index is hit.
+        for (int i = size - 1; i >= index; i--) {
+            arr[i + 1] = arr[i];
+        }
+
+        // Assign arr[index] = item.
+        arr[index] = item;
+
+        // Increment size.
+        ++size;
     }
 
     public T remove(int index) {
-        return null;
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        // Get arr[index].
+        T item = arr[index];
+
+        // Copy everything past the index one space up.
+        for (int i = index; i < size; i++) {
+            arr[i] = arr[i + 1];
+        }
+
+        // Overwrite last index.
+        arr[size - 1] = null;
+
+        // Decrement size.
+        --size;
+
+        return item;
     }
-
-
-
 }
