@@ -37,4 +37,21 @@ class FactorialTest {
     void factorialOf5Recursive() {
         Assertions.assertEquals(120, Factorial.getFactorialRecursive(5));
     }
+
+    @Test
+    void factorialOf0Dynamic() {
+        Assertions.assertEquals(1, Factorial.getFactorialDynamic(0));
+    }
+    @Test
+    void factorialOf1Dynamic() {
+        Assertions.assertEquals(1, Factorial.getFactorialDynamic(1));
+    }
+    @Test
+    void factorialOf3Dynamic() {
+        Assertions.assertEquals(6, Factorial.getFactorialDynamic(3));
+    }
+    @Test
+    void factorialOf5Dynamic() {
+        Assertions.assertEquals(120, Factorial.getFactorialDynamic(5));
+    }
 }
