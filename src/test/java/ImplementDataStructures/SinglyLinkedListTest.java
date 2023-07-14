@@ -60,11 +60,26 @@ class SinglyLinkedListTest {
 
     @Test
     void removeHead() {
-
+        Assertions.assertEquals(1, list.removeHead());
     }
 
     @Test
     void removeTail() {
+        Assertions.assertEquals(3, list.removeTail());
+    }
+
+    @Test
+    void removeTailUntilHead() {
+        list.removeTail();
+        list.removeTail();
+        Assertions.assertEquals(1, list.removeTail());
+    }
+    @Test
+    void removeTailUntilNull() {
+        list.removeTail();
+        list.removeTail();
+        list.removeTail();
+        Assertions.assertNull(list.removeTail());
     }
 
     @Test

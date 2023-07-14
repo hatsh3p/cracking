@@ -79,23 +79,39 @@ public class SinglyLinkedList<T> {
     }
 
     public T removeHead() {
-        T data = head.next.data;
-        head.next = head.next.next; // Replace effective head.
-        --size;
-        return data;
+        if (head.next != null) {
+            T data = head.next.data;
+            head.next = head.next.next; // Replace effective head.
+            --size;
+            return data;
+        }
+        return null;
     }
 
     public T removeTail() {
-        SLLNode<T> current = head.next;
-        while (current.next.next != null) {
-            current = current.next;
-        }
-        T data = current.next.data;
-        tail = current;
-        current.next = null;
-        --size;
-        return data;
+        if (head.next != null) {
+            SLLNode<T> previous = null;
+            SLLNode<T> current = head.next;
+            if (current.next == null) {
+                head.next = null;
+                tail = null;
+                return current.data;
+            }
+            while (current.next.next != null) {
+                previous = current;
+                current = current.next;
+            }
 
+            T data = current.next.data;
+            tail = current;
+            if (previous == null) {
+                head.next = tail;
+            }
+            current.next = null;
+            --size;
+            return data;
+        }
+        return null;
     }
     public T delete(int pos) {
         if (pos >= size) {
