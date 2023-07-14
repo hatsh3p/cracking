@@ -83,10 +83,6 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void delete() {
-    }
-
-    @Test
     void testDelete() {
     }
 
@@ -96,5 +92,11 @@ class SinglyLinkedListTest {
 
     @Test
     void isEmpty() {
+    }
+
+    @Test
+    void reverse() {
+        list.reverse();
+        Assertions.assertArrayEquals(new Object[] {3, 2, 1}, list.toArray());
     }
 }

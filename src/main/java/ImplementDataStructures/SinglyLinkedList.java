@@ -1,6 +1,7 @@
 package ImplementDataStructures;
 
 import java.util.Objects;
+import java.util.Stack;
 
 public class SinglyLinkedList<T> {
     private SLLNode<T> head;
@@ -138,6 +139,31 @@ public class SinglyLinkedList<T> {
         }
         --size;
         return null;
+    }
+
+    // Need to review this one.
+    public void reverse() {
+        // Early exit if there are 0 or 1 elements.
+        if (head.next == null || head.next.next == null) {
+            return;
+        }
+        // previous -> current -> next
+        // next -> current -> previous
+        SLLNode<T> previous = null;
+        SLLNode<T> current = head.next;
+        SLLNode<T> next = head.next.next;
+        while (current != null) {
+            // Save the real "next" element we are going to go to before
+            // reassigning pointers.
+            next = current.next;
+            // Reassign current's pointer.
+            current.next = previous;
+            // Set the variables to check the next current.
+            previous = current;
+            current = next;
+        }
+        // Reset the head of the list.
+        head.next = previous;
     }
 
     public int size() {
