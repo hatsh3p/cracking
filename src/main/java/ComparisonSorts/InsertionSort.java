@@ -3,6 +3,21 @@ package ComparisonSorts;
 import java.util.Arrays;
 
 public class InsertionSort {
+    // Consider the first element in the array "sorted".
+    // Loop through the rest of the array, inserting the current in the appropriate
+    // position in the "sorted" part of the array and copying elements as needed.
+    public static void sort2(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int currentIndex = i;
+            while (currentIndex > 0 && arr[currentIndex - 1] > arr[currentIndex]) {
+                // Swap elements that are out of order.
+                int temp = arr[currentIndex];
+                arr[currentIndex] = arr[currentIndex - 1];
+                arr[currentIndex - 1] = temp;
+                currentIndex--;
+            }
+        }
+    }
 
     public static void sort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
